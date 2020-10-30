@@ -1,1 +1,156 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+  /*put a border around everything to see where it stops and starts*/
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height: 1.5;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3, h4{
+    color:#b30000;
+    letter-spacing: 3px;
+    text-align: left;
+}
+h1{
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    margin: .5% 40%;
+}
+
+.header1 {
+    letter-spacing: 0px;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    font-size:2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+section{
+    padding: 1% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration:none;
+    letter-spacing: 4px;
+    color:#cccccc;
+    font-family: 'Poppins', sans-serif;
+}
+a:hover{
+    background-color:#b30000;
+    color:#4F4F4F;
+}
+/* DISPLAY FLEX ALWAYS GOES ON THE PARENT - ALWAYS TARGET PARENT OF ITEMS YOU WANT TO FLEX */
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tophead {
+    width: 25%;
+    margin-left: 2%;
+}
+
+.links {
+    background-color: #b30000;
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    justify-content: right;
+}
+
+.top{
+    height: 70rem;
+    margin-top: 5%;  
+    display: flex;
+    width: 100%;
+    padding: 4.5% 5% 0 5%;
+}
+
+.projects-btn{
+    background-color: #b30000;
+    margin-bottom: 20%;
+}
+
+.imgContainer{
+    background-image: url("https://picsum.photos/1200/600");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.gallery img {
+    width: 30%;
+}
+
+.gallery p {
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #f8f2ec;
+    color:#000;
+    padding:2% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-btn {
+    background-color: #b30000;
+}
+
+.logo-pics {
+    width: 80%;
+    height: 30%;
+    margin: auto 0;
+    padding: 2% 5%;
+}
+
+.social-icons{
+    display:flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.social-icons img{
+    margin: 0 auto;
+    padding-left: 10%;
+}
+
