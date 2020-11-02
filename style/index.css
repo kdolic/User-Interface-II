@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     max-width:100%;
+    border: 1px solid black;
   /*put a border around everything to see where it stops and starts*/
 }
 /*General Styles*/
@@ -51,13 +52,14 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 a:hover{
+    width: 100%;
     background-color:#000;
     color:#fff;
 }
 /* DISPLAY FLEX ALWAYS GOES ON THE PARENT - ALWAYS TARGET PARENT OF ITEMS YOU WANT TO FLEX */
 header nav {
     position: fixed;
-    width: 86%;
+    width: 96%;
     top: 0;
     align-items: center;
     display: flex;
@@ -73,7 +75,7 @@ header nav {
     background-color: #b30000;
     display: flex;
     flex-direction: row;
-    width: 23%;
+    width: 22.5%;
     justify-content: right;
 }
 
@@ -107,18 +109,19 @@ header nav {
 }
 
 .gallery {
+    width: 95%;
+    margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
 }
 
 .gallery img {
-    width: 30%;
+    width: 100%;
 }
 
-.gallery p {
-    width: 30%;
+.gallery h3 {
+    width: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -155,3 +158,142 @@ footer {
     padding-left: 10%;
 }
 
+/* Media Query at 800px View */
+@media (max-width: 800px){
+
+}
+
+
+
+/* Media Query at 500px View */
+@media (max-width: 500px){
+
+    h1, h2, h3, h4{
+        letter-spacing: 2px;
+    }
+
+    h1{
+        font-size: 4rem;
+       /* margin: .5% 40%; */
+    }
+    
+    .header1 {
+        text-align: center;
+        margin: 8%; 
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+    
+    section{
+        padding: 3% 0;
+    }
+
+    a{
+        /*width: 100%; */
+        letter-spacing: 2px;
+    }
+
+    header nav {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .tophead {
+        width: 50%;
+        margin-bottom: 2%;
+        /*margin-left: 5%; */
+    }
+    
+    .links {
+        flex-direction: column;
+        width: 24%;
+        text-align: center;
+    }
+    
+    .top{
+        height: 25rem;
+        margin-top: 1%;  
+    }
+    
+    .projects-btn{
+        margin-top: 4%;
+        border-radius: 20px;
+    }
+
+
+    .gallery {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .gallery-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gallery div {
+        width: 40%;
+        margin-bottom: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    footer {
+        
+        padding:2% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .contact-btn {
+       margin-left: 38%;
+    }
+    .logo-pics {
+        width: 60%;
+        height: 100%;
+        margin: auto 0;
+        padding: 2% 5%;
+    }
+    
+    nav .social-icons{
+        margin-left: 32%;
+    }
+
+    .social-icons a{
+        display:flex;
+        width: 50%;
+        margin: 6%;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    
+    .footer-div h3 {
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+    }
+
+    .social-icons a:hover {
+    width: 100%;
+    display: none;
+    }
+
+    .social-icons img{
+        margin: 0 auto;
+        padding-left: 10%;
+    }
+    
+}
