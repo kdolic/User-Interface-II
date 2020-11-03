@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     max-width:100%;
+    border: 1px solid black;
   /*put a border around everything to see where it stops and starts*/
 }
 /*General Styles*/
@@ -44,18 +45,20 @@ h3{
 section{
     padding: 1% 0;
 }
+
 a{
     text-decoration:none;
     letter-spacing: 4px;
     color:#cccccc;
     font-family: 'Poppins', sans-serif;
 }
-a:hover{
+
+.links a:hover{
     width: 100%;
     background-color:#000;
     color:#fff;
 }
-/* DISPLAY FLEX ALWAYS GOES ON THE PARENT - ALWAYS TARGET PARENT OF ITEMS YOU WANT TO FLEX */
+
 header nav {
     width: 96%;
     top: 0;
@@ -77,6 +80,7 @@ header nav {
     justify-content: right;
 }
 
+/* Top Styles */
 .top{
     height: 70rem;
     display: flex;
@@ -105,16 +109,26 @@ header nav {
     width: 100%;
 }
 
+/* Gallery Styles */
 .gallery {
-    width: 95%;
+    width:95%;
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .gallery img {
     width: 100%;
+}
+
+.gallery div {
+    width: 30%;
 }
 
 .gallery h3 {
@@ -123,12 +137,21 @@ header nav {
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* Footer Styles */
 footer {
     background-color: #f8f2ec;
     color:#000;
     padding:2% 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
 }
 
 .footer-div h3 {
@@ -142,7 +165,7 @@ footer {
 }
 
 .logo-pics {
-    width: 80%;
+    width: 100%;
     height: 30%;
     margin: auto 0;
     padding: 2% 5%;
@@ -150,14 +173,13 @@ footer {
 
 .social-icons{
     display:flex;
-    width: 35%;
     align-items: center;
     justify-content: space-between;
 }
 
 .social-icons a:hover {
     width: 100%;
-    display: none;
+    /* display: none; */
     }
 
 .social-icons img{
@@ -165,10 +187,143 @@ footer {
     padding-left: 10%;
 }
 
+.icon-container {
+    width: 30%;
+}
+
+
+
+
+
+/******************** TABLET VIEW *******************/
+
 /* Media Query at 800px View */
 @media (max-width: 800px){
+    h1, h2, h3, h4 {
+        letter-spacing: 3px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+    .header1 {
+        margin: 3%; 
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 4% 0;
+    }
+
+    a {
+        letter-spacing: 4px;
+    }
+
+    header nav {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .tophead {
+        width: 50%;
+        margin-bottom: 2%;
+    }
+    
+    .links {
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+    }
+    
+    .links a:hover{
+        background-color:#b30000;
+    }
+    .top{
+        height: 40rem;
+        margin: 2% 0 5% 0;
+    }
+    
+    .projects-btn{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0%;
+        border-radius: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gallery-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gallery div {
+        width: 30%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .contact-btn {
+        border-radius: 25px;
+        width: 20%;
+    }
+
+    .social-icons a{
+        width: 20%;
+    }
+    
+    .footer-div h3 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .social-icons a:hover {
+        width: 20%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
 
 }
+
+
+
+
+
+
 
 /****************** MOBILE SIZE *************/
 
@@ -205,10 +360,6 @@ footer {
         letter-spacing: 2px;
     }
 
-    a:hover {
-        background-color: #b30000;
-    }
-
     header nav {
         position: relative;
         width: 100%;
@@ -224,6 +375,10 @@ footer {
         flex-direction: column;
         width: 24%;
         text-align: center;
+    }
+
+    .links a:hover{
+        background-color:#b30000;
     }
     
     .top{
@@ -264,10 +419,17 @@ footer {
         width: 100%;
     }
 
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
     .contact-btn {
         border-radius: 25px;
         width: 25%;
-        margin-left: 38%;
+        margin: 0 auto;
     }
 
     .social-icons a{
@@ -281,9 +443,5 @@ footer {
 
     .social-icons a:hover {
         width: 20%;
-    }
-
-    .social-icons {
-        width: 76%;
     }
 }
