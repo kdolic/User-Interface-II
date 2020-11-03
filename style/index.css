@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     max-width:100%;
-    border: 1px solid black;
   /*put a border around everything to see where it stops and starts*/
 }
 /*General Styles*/
@@ -58,7 +57,6 @@ a:hover{
 }
 /* DISPLAY FLEX ALWAYS GOES ON THE PARENT - ALWAYS TARGET PARENT OF ITEMS YOU WANT TO FLEX */
 header nav {
-    position: fixed;
     width: 96%;
     top: 0;
     align-items: center;
@@ -81,7 +79,6 @@ header nav {
 
 .top{
     height: 70rem;
-    margin-top: 5%;  
     display: flex;
     width: 100%;
     padding: 4.5% 5% 0 5%;
@@ -134,6 +131,12 @@ footer {
     justify-content: space-evenly;
 }
 
+.footer-div h3 {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
 .contact-btn {
     background-color: #b30000;
 }
@@ -150,8 +153,12 @@ footer {
     width: 35%;
     align-items: center;
     justify-content: space-between;
-
 }
+
+.social-icons a:hover {
+    width: 100%;
+    display: none;
+    }
 
 .social-icons img{
     margin: 0 auto;
@@ -174,7 +181,6 @@ footer {
 
     h1{
         font-size: 4rem;
-       /* margin: .5% 40%; */
     }
     
     .header1 {
@@ -196,8 +202,11 @@ footer {
     }
 
     a{
-        /*width: 100%; */
         letter-spacing: 2px;
+    }
+
+    a:hover {
+        background-color: #b30000;
     }
 
     header nav {
@@ -209,7 +218,6 @@ footer {
     .tophead {
         width: 50%;
         margin-bottom: 2%;
-        /*margin-left: 5%; */
     }
     
     .links {
@@ -220,7 +228,7 @@ footer {
     
     .top{
         height: 25rem;
-        margin-top: 1%;  
+        margin: 1% 0 3% 0;
     }
     
     .projects-btn{
@@ -232,7 +240,6 @@ footer {
     .gallery {
         width: 100%;
         margin: 0 auto;
-
     }
 
     .gallery-container {
@@ -243,57 +250,40 @@ footer {
     
     .gallery div {
         width: 40%;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
     
     footer {
-        
-        padding:2% 0;
+        padding: 2% 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        width: 100%;
     }
-    
+
     .contact-btn {
-       margin-left: 38%;
-    }
-    .logo-pics {
-        width: 60%;
-        height: 100%;
-        margin: auto 0;
-        padding: 2% 5%;
-    }
-    
-    nav .social-icons{
-        margin-left: 32%;
+        border-radius: 25px;
+        width: 25%;
+        margin-left: 38%;
     }
 
     .social-icons a{
-        display:flex;
-        width: 50%;
-        margin: 6%;
-        align-items: center;
-        justify-content: space-evenly;
-    
+        width: 20%;
     }
     
     .footer-div h3 {
         width: 50%;
-        margin-left: 25%;
         text-align: center;
     }
 
     .social-icons a:hover {
-    width: 100%;
-    display: none;
+        width: 20%;
     }
 
-    .social-icons img{
-        margin: 0 auto;
-        padding-left: 10%;
+    .social-icons {
+        width: 76%;
     }
-    
 }
